@@ -5,3 +5,22 @@ Tuesday at 3:20 and Thursday at 5:20 for an hour
 Signed decimal makes the largest bit negative
 To convert between binary and octal or hex you can look at 3 or 4 bits at a time respectively
 
+10-2
+Vim commands
+Emergency exit without saving
+esc:q!"enter"
+
+Ctrl-F Scroll forward one screen (look down)
+Ctrl-B Scroll backward one screen (look up)
+Ctrl-E Scroll forward one line (look down)
+Ctrl-Y Scroll backward one line (look up)
+
+Undo
+u
+
+If statement without braces controls the next line of code
+int a = 3;
+if(a == 3)
+	print("worked");
+
+This code will print worked
