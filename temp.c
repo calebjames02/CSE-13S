@@ -12,5 +12,7 @@ int main(){
 		printf("whatever\n");
 	}
 
+	if(-1) printf("e\n");
+
 	return 0;
 }
