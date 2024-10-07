@@ -1,0 +1,13 @@
+10/7/24
+
+Do-while loop
+do{
+
+}while(something);
+
+Does something and then checks the condition
+If the condition is true, loops back to the top again
+
+for(;;){} is the same as while(1){}
+
+
