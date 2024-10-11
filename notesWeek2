@@ -10,4 +10,18 @@ If the condition is true, loops back to the top again
 
 for(;;){} is the same as while(1){}
 
+10/11/24
+#include <assert.h>
+assert(something);
+Guaranteed to look for a non zero value, and if the condition is non zero it considers the condition to be true and it will continue running
+If the result is zero the assertion fails, and it prints out an error message
 
+printf conversions
+%d, int as decimal
+%c, int as c
+%10d, int as decimal (10 characters wide)
+%o, octal
+%x, hex
+%08x, print int as an 8-digit hex
+%%, print a %
+%s, print a character string
