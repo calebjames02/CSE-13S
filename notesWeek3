@@ -1,0 +1,61 @@
+10/14/24
+int main(int argc, char **argv)
+argc is the number of arguments passed in
+Default is 1 if no arguments are passed in
+The 1 that is automatically included is counting the name of the program
+Looks for spaces separating arguments
+abc def - 2 arguments
+xxx,xxx - 1 argument
+
+abc def
+argv[0] is "./args"
+argv[1] is "abc"
+argv[2] is "def"
+
+strcmp() - String compare
+string str = "abc"
+"abc" == str
+	This just compares the memory addresses of the two strings to see if they are the same
+
+strcmp() actually compares two strings, character by character
+strcmp returns an integer value
+Result being 0 means the two strings are the same
+If the number is less than zero it means the first argument comes alphabetically before the second one
+If the number is positive that it means the second argument comes alphabetically before the first one
+
+WHEN USING MAN MAKE SURE TO PUT MAN 3 SO IT USES THE RIGHT VERSION
+
+Floating point formats
+printf("!%f!\n", 1.23456789); // 6 decimals
+Prints 1.234568
+	Default for %f is only six decimal digits so the 7 got rounded up to an 8
+
+printf("!%13f!\n", 1.23456789); // Right justified
+	Prints it as thirten characters wide and adds spaces on the left to get to thirteen
+	!     1.234568!
+printf("!%-13f!\n", 1.23456789); // Left justified
+	Makes it right justified instead of left
+	!1.234568     !
+
+printf("!%.13f!\n", 1.23456789); // Thirteen decimals
+	Prints evertying and adds zeroes at the end
+	Give me thirteen digits after the decimal point
+	!1.2345678900000!
+
+printf("!%20.13f!\n", 1.23456789);
+	Right justified and 20 characters total with 13 decimal places
+	!     1.2345678900000!
+
+printf("!%20.2f!\n", 1.23456789);
+	.2 commonly used for cents when dealing with money
+	!                1.23!i
+
+10/16/24
+Calculating Series
+Signma means a for loop
+Declare a sum variable
+Maybe declare numerator and denominator
+For each variable ask
+	What is initial value?
+	What is iterative step?
+
