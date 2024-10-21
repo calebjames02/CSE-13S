@@ -59,3 +59,25 @@ For each variable ask
 	What is initial value?
 	What is iterative step?
 
+10/20/24
+To get a character
+	int ch = getchar();
+	if(ch == EOF) break;
+
+	printf("%c\n", ch); - This prints the character
+	printf("%d\n", ch); - Prints the ascii value of the character
+
+switch(ch){
+case 'a':
+	++num_a;
+	break;
+case 'b':
+	++num_b;
+...
+}
+
+include <ctype.h>
+islower()
+isupper()
+isprint()
+isgraph()
