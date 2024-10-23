@@ -1,0 +1,22 @@
+10/21/24
+Make sure to include break statements when using switch, otherwise it will run all cases below the first one executed
+
+Need to add a null terminator at the end of any string in c
+Make the last character you want looked at in the string (0) - Just the number 0
+This tells the program the string ends at that character
+Only need to do this if you don't initialize string when you declare it
+
+char ch[10] = "abc"; - Don't need to null terminate this
+
+10/23/24
+#include <string>
+strlen
+strchr
+
+Might be useful for hangman
+
+Can add functions if you want
+Might want to add, is valid punctuation
+
+#include <stdlib.h>
+for exit maybe
