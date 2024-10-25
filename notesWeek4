@@ -20,3 +20,15 @@ Might want to add, is valid punctuation
 
 #include <stdlib.h>
 for exit maybe
+
+10/25/24
+int my_set[256];
+my_set['a'] = 1;
+my_set['b'] = 1;
+my_set['z'] = 1;
+starts indexing at 'a' and goes to 'z'
+for(char ch = 'a'; ch <= 'z'; ++ch){
+	if(set1[ch1]){
+		printf("'%c' is in the set\n", set1[ch1]);
+	}
+}
