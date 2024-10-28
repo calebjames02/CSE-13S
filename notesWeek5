@@ -1,0 +1,27 @@
+10/28/24
+clang -c randi.c
+clang -c lcr.c
+Creates randi.o and lcr.o
+clang lcr.o randi.o -o lcr
+Compiles both of the files into one executable
+
+Makefiles
+hangman: hangman.c - Has a dependency for hangman.c, needs hangman.c to run
+	clang hangman.c -o hangman - Compiles hangman.c into hangman
+
+HEADERS=funky.h
+
+main: funky.o main.o
+	clang funky.o main.o -o main
+
+funky.o: funky.c $(HEADERS)
+	clang -c funky.c
+
+main.o: main.c $(HEADERS)
+	clang -c main.c
+
+Tells the makefile that funky.o and main.o depend on all of the headers files, which is just funky.h
+
+.PHONY: clean - Used to have to put this to specify that clean is not used to make anything
+clean:
+	rm -f main.o funky.o main
