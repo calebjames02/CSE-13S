@@ -25,3 +25,5 @@ Tells the makefile that funky.o and main.o depend on all of the headers files, w
 .PHONY: clean - Used to have to put this to specify that clean is not used to make anything
 clean:
 	rm -f main.o funky.o main
+
+10/30/24
