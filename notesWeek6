@@ -1,0 +1,13 @@
+11/4/24
+All global variables in C guaranteed to be initialized to zero
+
+If p is pointer, then *p is the thing that the pointer points to
+
+while(*p1 == *p2){
+	p1++;
+	p2++;
+}
+
+*destination = *source; - To copy one element from one pointer to another
+
+Is it worth checking for pointers being the same to save time for long strings

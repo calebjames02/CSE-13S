@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 int main(){
-	printf("!%-.13f!\n", 12345);
+	char c[] = "abc";
+	char *p = c;
+	char *q = c;
+
+	printf("%d\n", p);
+	printf("%d\n", q);
 
 	return 0;
 }
