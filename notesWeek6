@@ -11,3 +11,29 @@ while(*p1 == *p2){
 *destination = *source; - To copy one element from one pointer to another
 
 Is it worth checking for pointers being the same to save time for long strings
+
+11/6/24
+typedef struct{ or struct mystruct{
+	int i;
+	char ch;
+	double d;
+} mystruct;
+
+mystruct st;
+
+int *p is an int;
+Address of int is &int
+int *p = &val;
+
+struct *p;
+*p.d = st.d
+p->d is the same as the above
+p[0]->d for an array of structs
+
+
+typedef struct s_node Node;
+
+struct s_node {
+	int key;
+	Node *next;
+}
