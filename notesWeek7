@@ -1,0 +1,45 @@
+11/13/24
+FILE *fin = fopen(filename, "r");
+FILE *fout = fopen(filename, "w");
+
+int ch = fgetc(fin); - Read one char
+fputc(ch, fout); - Write one char
+fprintf(fout, "%d", i); - Like printf but to a file
+fscanf(fout, "%d", &i); - like scanf but for a file
+
+fclose(f); - Close file (write buffer to disk)
+
+
+while(1){ - Keeps reading files and printing them as long as the char isn't EOF
+	int ch = getchar();
+	if (ch == EOF) break;
+	putchar(ch);
+}
+
+This does the same thing as the code above
+int ch = fgetc(stdin);
+fputc(ch, stdout);
+
+
+Does the same thing but copies contents of an input file to an output file
+int ch = fgetc(fin);
+if(ch == EOF) break;
+fputc(ch, fout);
+
+If file isn't successfully opened NULL is returned
+Always make a check that the pointers to the files opened are not NULL
+
+
+Bit Shifting
+x << 4 - Left shift x by 4
+Shift all bits in variable to the left four places
+When using a char, get one char, left shift by four and then can get another char and or them to combine them
+11110000 | 00001010 = 1111 1010
+
+To extract both nibbles from a byte 11110000
+To get first nibble, need to zero out bits on the left
+	b & 0x0f (00001111)
+Then b >> 4
+	Makes the number 00001111
+	Now the second nibble can be extracted
+	And it with same thing as above

@@ -37,3 +37,8 @@ struct s_node {
 	int key;
 	Node *next;
 }
+
+11/8/24
+Inorder: Second visit: left, center, right
+Postorder: Third visit: Left, right, center
+Preorder: First visit: Center, left right
