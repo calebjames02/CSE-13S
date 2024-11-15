@@ -43,3 +43,28 @@ Then b >> 4
 	Makes the number 00001111
 	Now the second nibble can be extracted
 	And it with same thing as above
+
+11/15/24
+Shell scripting done in bash
+Comment lines start with #
+Way to run scripts is 'source name.sh'
+echo "something" - to print it
+
+VARIABLE=something - For longer strings make this in quotes
+echo $variable - Prints the variable
+
+VARIABLE=$(ls)
+echo $VARIABLE - Calls ls
+
+echo $1 $2 $3 - The dollar signs and numbers represent command line parameters
+You can use command line arguments in a double quoted string but not a single quoted string
+VARIABLE=$@ - Represents all command line arguments
+
+if ["$1" = "abc" ] - Need to leave space between brackets and other things otherwise it is assumed the characters that are touching are all one command
+then
+	echo "it's abc"
+else
+	echo "it's not abc"
+fi
+
+$? = Return value of most recently run function
