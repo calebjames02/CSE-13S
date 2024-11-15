@@ -68,3 +68,8 @@ else
 fi
 
 $? = Return value of most recently run function
+
+for filename in data/*.dat - Iterates through each file in a folder and prints their name
+do
+	echo $filename
+done
