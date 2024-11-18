@@ -1,0 +1,28 @@
+11/18/24
+'' - For when need to print punctuation
+"" - For when need to print variables
+
+VAR="something" - Don't add any spaces in between '=' sign
+VAR=$(./myprogram) - Runs my program and assigns the output to VAR
+
+Running a bash script
+source script.sh - Just run the script as if you are typing it
+	Problem occurs if runs an exit command. You will be logged out
+sh script.sh - Run the script in its own command processor
+	Exit command will not log you out
+chmod +x script.sh
+./script.sh - Make the file executable and it can be run like an executable
+
+if ! [ something ] - This is how you invert a condition
+if [ something ] || [ something else]
+
+FILES=$(ls $1) - This will only print the first filename
+
+for filename in $FILES
+do
+	echo $filename
+done
+
+FILES=$(ls $@) - Will print all of the filenames
+
+if [ $something ] ; then - Can run two commands in one line separated by a semicolon
