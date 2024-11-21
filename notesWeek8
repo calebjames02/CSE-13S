@@ -26,3 +26,8 @@ done
 FILES=$(ls $@) - Will print all of the filenames
 
 if [ $something ] ; then - Can run two commands in one line separated by a semicolon
+
+11/20/24
+$? - Exit code of most recently run program
+-ne = Not equals
+-eq = Equals
