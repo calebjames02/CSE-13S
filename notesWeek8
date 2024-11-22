@@ -31,3 +31,11 @@ if [ $something ] ; then - Can run two commands in one line separated by a semic
 $? - Exit code of most recently run program
 -ne = Not equals
 -eq = Equals
+
+11/22/24
+Order from top to bottom of operators table is their precedence
+Top comes first, and bottom comes last
+
+?: - Ternary Operator
+int x = a < b ? a : b;
+	If true, then a. If false, then b.
