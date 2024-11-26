@@ -1,0 +1,35 @@
+11/25/24
+"Automatic Variables" in makefile
+
+CC = clang
+CFLAGS = -g
+HEADERS = file1.h file2.h file3.h
+%.o: %.c $(HEADERS) - If a c file is found it creates an object file of it. Also add all necessary header files as dependencies
+	$(CC) $(CFLAGS) -c %< -o $@ - %< represents first dependency, in the case the C file. $@ represents the target, or the thing you are making (so the object file)
+
+sorting: sorting.o insert.o quick.o beep.o
+	$(CC) $^ -o $@ - $^ represents all dependencies. This compiles all object files into an executable name sorting
+
+Unbuffered I/O
+open(), read(), close()
+
+int fd = open(const char* name, int flags);
+flags = O_RDONLY, O_WRONLY, O_RDWR
+name = file to open (file must exist)
+fd = file descriptor (-1 to indicate error) - Always check to see if it is -1
+fd = 0 - Stdin
+fd = 1 - Stdout
+fd = 2 - Stderror
+
+ssize_t res = read(int fd, void *buf, size_t n);
+ssize_t is a special kind of int used to store the number of bytes read
+	size_t is a special unsigned int
+n = number of bytes to read
+buf = pointer to a buffer that will receive the file's bytes
+fd = file descriptor
+res = number of bytes actually read (res < n is possible so check for this)
+	0 to indicate EOF - check for this
+	-1 to indicated an error - check for this
+
+IMPORTANT: TYPE CASTING
+	(type) stuff - Casts stuff to datatype 'type'
