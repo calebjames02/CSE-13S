@@ -1,0 +1,9 @@
+12/2/24
+valgrind --leak-check=full ./valtest1
+When compiling -gdwarf-4
+Malloc allocates uninitialized memory, where as calloc allocates memory initialized to 0
+
+Embedded Systems
+Microprocessor embedded in a non computer device
+Embedded systems consider time important for correctness
+	Results need to be available fast enough
