@@ -7,3 +7,61 @@ Embedded Systems
 Microprocessor embedded in a non computer device
 Embedded systems consider time important for correctness
 	Results need to be available fast enough
+
+12/4/24
+Signed vs unsigned decimal
+n + 1/2 loop
+If statement only controls one line without braces
+Is 'A' an integer
+What is valid RPN
+Why char **argv
+Double pointers
+	Want it to cause segfault by setting it to NULL
+What value does assert crash on
+Where does calloc and malloc allocate memory
+^ is XOR
+void *func(int num) - Review this
+
+Ask about chars being ints
+
+1. False
+2. True
+3. False
+4. True
+5. True
+
+6. False
+7. True
+8. 
+9. True
+
+16. True
+17. True
+18. True
+
+19. False
+20. True
+21. False
+22. False
+
+12/6/24
+32. 
+33. False
+34. True
+
+41. Heap
+42. D
+43. A
+44. C
+
+45. A
+46. A
+
+53. A
+54. D
+55. C
+56. C
+
+57. B
+58. B
+
